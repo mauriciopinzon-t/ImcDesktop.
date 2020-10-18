@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImcDesktop"
         mc:Ignorable="d"
-        Title="Índice de Masa Corporal" Height="400" Width="300">
+        Title="Índice de Masa Corporal" Height="430" Width="300">
     <StackPanel>
         <Border Margin="8" BorderThickness="1" BorderBrush="LightGray">
             <StackPanel Margin="8">
