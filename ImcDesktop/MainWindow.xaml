@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImcDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Índice de Masa Corporal" Height="400" Width="300">
+    <StackPanel>
+        <Border Margin="8" BorderThickness="1" BorderBrush="LightGray">
+            <StackPanel Margin="8">
+                <Label Content="Peso en kilogramos"></Label>
+                <TextBox x:Name="pesoTextBox"></TextBox>
+                <Label Content="Estatura en metros"></Label>
+                <TextBox x:Name="estaturaTextBox" Margin="4"></TextBox>
+                <StackPanel Orientation="Horizontal" Margin="8" HorizontalAlignment="Center">
+                    <Button x:Name="calcularButton" Content="Calcular" Margin="4" MinWidth="80" Click="calcularButton_Click"></Button>
+                    <Button x:Name="limpiarButton" Content="Limpiar" Margin="4" MinWidth="80" Click="limpiarButton_Click"></Button>
+                </StackPanel>
+            </StackPanel>
+        </Border>
 
-    </Grid>
+        <GroupBox Header="Resultados" Margin="8" BorderBrush="LightGray">
+            <StackPanel Margin="8">
+                <TextBlock Text="El índice de masa corporal (IMC) de la persona es:"></TextBlock>
+                <TextBlock Text="23.45" Margin="8" FontWeight="Bold" HorizontalAlignment="Center" FontSize="20" x:Name="imcTextBlock"></TextBlock>
+                <TextBlock Text="La situación nutricional de la persona es:"></TextBlock>
+                <TextBlock Text="Peso normal" x:Name="situacionTextBlock" Margin="8" HorizontalAlignment="Center" FontSize="16"></TextBlock>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="salirButton" Content="Salir" HorizontalAlignment="Center" Margin="8" MinWidth="100" Click="salirButton_Click"></Button>
+    </StackPanel>
 </Window>
